@@ -29,7 +29,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $count = mysqli_num_rows($result);
 
     if($count == 1) {
-        header("Location: welcome.php", false);
+        header("Location: success.php", false);
     }else {
         $error = "Username or Password invalid.";
         echo "<script type='text/javascript'>alert('$error');</script>";
